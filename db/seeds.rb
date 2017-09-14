@@ -8,3 +8,16 @@
 
 User.create(username: "Jaclyn", password: "bellvale")
 User.create(username: "Maxwell", password: "elBandito")
+
+Section.create(name:"Exteriors")
+Section.create(name:"Grounds")
+Section.create(name:"Gardens")
+Section.create(name:"External Buildings")
+Section.create(name:"Living Rooms")
+Section.create(name:"Kitchens")
+Section.create(name:"Bedrooms")
+Section.create(name:"Bathrooms")
+Section.create(name:"Basements")
+Section.create(name:"Storage")
+Section.create(name:"Decor")
+Section.create(name:"Extensions")

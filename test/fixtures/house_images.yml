@@ -2,10 +2,12 @@
 
 one:
   url: MyString
+  section: one
   tags: MyString
   score: 1
 
 two:
   url: MyString
+  section: two
   tags: MyString
   score: 1

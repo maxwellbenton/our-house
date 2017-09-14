@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :comments
   resources :house_images
+  resources :sections, only: [:new, :create]
   resources :users, only: [:index, :show]
 
   root 'house_images#index'

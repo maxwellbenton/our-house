@@ -6,6 +6,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :section %>
+    <%= form.select :section, [['exteriors'], ['grounds'], ['gardens'], ['external buildings'], ['living rooms'], ['kitchens'], ['bedrooms'], ['bathrooms'], ['basements'], ['storage'], ['decor']], id: :house_image_section %>
+  </div>
+
+  <div class="field">
     <%= form.label :tags %>
     <%= form.text_field :tags, id: :house_image_tags %>
   </div>

@@ -69,6 +69,6 @@ class HouseImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def house_image_params
-      params.require(:house_image).permit(:url, :tags, :score)
+      params.require(:house_image).permit(:url, :tags, :section, :score)
     end
 end

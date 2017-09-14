@@ -17,7 +17,7 @@ class HouseImagesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create house_image" do
     assert_difference('HouseImage.count') do
-      post house_images_url, params: { house_image: { score: @house_image.score, tags: @house_image.tags, url: @house_image.url } }
+      post house_images_url, params: { house_image: { score: @house_image.score, section_id: @house_image.section_id, tags: @house_image.tags, url: @house_image.url } }
     end
 
     assert_redirected_to house_image_url(HouseImage.last)
@@ -34,7 +34,7 @@ class HouseImagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update house_image" do
-    patch house_image_url(@house_image), params: { house_image: { score: @house_image.score, tags: @house_image.tags, url: @house_image.url } }
+    patch house_image_url(@house_image), params: { house_image: { score: @house_image.score, section_id: @house_image.section_id, tags: @house_image.tags, url: @house_image.url } }
     assert_redirected_to house_image_url(@house_image)
   end
 
