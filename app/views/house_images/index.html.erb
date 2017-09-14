@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Our House</h1>
+
+
+  <%= render 'form' %>
+  <div class="row">
+    <% @house_images.each do |house_image| %>
+        <div class="col-md4">
+          <div class="card">
+            <img class="card-img-top img-responsive" src="<%= house_image.url%>" alt="<%= house_image.url%>">
+            <div class="card-block">
+
+              <p class="card-text"><%= house_image.tags %></p>
+              <p class="card-text"><%= house_image.score %></p>
+              <%= link_to 'Show', house_image %>
+              <%= link_to 'Edit', edit_house_image_path(house_image) %>
+              <%= link_to 'Destroy', house_image, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
+          </div>
+        </div>
+
+    <% end %>
+  </div>
+
+
+
+<br>

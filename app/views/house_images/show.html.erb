@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @house_image.url %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @house_image.tags %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @house_image.score %>
+</p>
+
+<%= link_to 'Edit', edit_house_image_path(@house_image) %> |
+<%= link_to 'Back', house_images_path %>
